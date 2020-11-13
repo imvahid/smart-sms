@@ -2,8 +2,8 @@
 
 namespace Va\SmartSms;
 
-use App\Console\Commands\SmartSmsCommand;
 use Illuminate\Support\ServiceProvider;
+use Va\SmartSms\Commands\SmartSmsCommand;
 use Va\SmartSms\Facades\SmartSmsServiceFacade;
 use Va\SmartSms\Facades\SmsNotificationFacade;
 use Va\SmartSms\Notifications\SmartSmsNotification;

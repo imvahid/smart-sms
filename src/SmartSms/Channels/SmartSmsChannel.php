@@ -17,7 +17,7 @@ class SmartSmsChannel
     public function send($notifiable, Notification $notification)
     {
         if(! method_exists($notification, 'toChannel')) {
-            throw new \Exception('toSls method not found.');
+            throw new \Exception('toChannel method not found.');
         }
         $data = $notification->toChannel();
         $message = $data['text'];

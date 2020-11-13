@@ -13,7 +13,7 @@ class SmartSmsCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'make:sms-notification {name}';
+    protected $name = 'make:sms-notification';
 
     /**
      * The console command description.
@@ -70,9 +70,9 @@ class SmartSmsCommand extends GeneratorCommand
     }
 
     /**
-     * Set repository class name
+     * Set Notification class name
      *
-     * @return  void
+     * @return SmartSmsCommand
      */
     private function setNotificationClass()
     {
@@ -102,7 +102,7 @@ class SmartSmsCommand extends GeneratorCommand
 
         $stub = parent::replaceClass($stub, $name);
 
-        return str_replace('Class', $this->model, $stub);
+        return str_replace('DummyNotification', $this->model, $stub);
     }
 
     /**

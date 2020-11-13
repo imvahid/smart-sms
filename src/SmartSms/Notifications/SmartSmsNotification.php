@@ -33,7 +33,7 @@ class SmartSmsNotification extends Notification
         return [SmartSmsChannel::class];
     }
 
-    public function toSls()
+    public function toChannel()
     {
         return [
             'text' => $this->message,

@@ -6,7 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Va\SmartSms\Channels\SmartSmsChannel;
 
-class {{ Class }} extends Notification
+class {{ class }} extends Notification
 {
     use Queueable;
 
@@ -15,9 +15,9 @@ class {{ Class }} extends Notification
     public $group;
 
     /**
-     * {{ Class }} constructor.
-     * @param null $message
-     * @param null $mobile
+     * {{ class }} constructor.
+     * @param string|null $message
+     * @param string|null $mobile
      * @param array $group
      */
     public function __construct(string $message = null, string $mobile = null, array $group = [])
