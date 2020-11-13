@@ -1,0 +1,44 @@
+{
+  "name": "va/smart-sms",
+  "description": "A package to send sms notification in laravel apps.",
+  "keywords": [
+    "laravel",
+    "sms",
+    "notification",
+    "smart-sms",
+    "laravel7-package",
+    "PHP",
+    "laravel7",
+    "iranian"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/va1hi9da9sh2ou0rz2ad1eh7/smart-sms",
+  "authors": [
+    {
+      "name": "Vahid Ashourzadeh",
+      "email": "v.ashourzadeh@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1.3",
+    "laravel/framework": "6.*|7.*|8.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Va\\SmartSms\\": "src/SmartSms/"
+    },
+    "files": [
+
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Va\\SmartSms\\SmartSmsServiceProvider"
+      ],
+      "aliases": {
+        "SmartSms" : "Va\\SmartSms\\Facades\\SmartSms"
+      }
+    }
+  }
+}

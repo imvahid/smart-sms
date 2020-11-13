@@ -1,0 +1,49 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Bus\Queueable;
+use Illuminate\Notifications\Notification;
+use Va\SmartSms\Channels\SmartSmsChannel;
+
+class {{ Class }} extends Notification
+{
+    use Queueable;
+
+    public $message;
+    public $mobile;
+    public $group;
+
+    /**
+     * {{ Class }} constructor.
+     * @param null $message
+     * @param null $mobile
+     * @param array $group
+     */
+    public function __construct(string $message = null, string $mobile = null, array $group = [])
+    {
+        $this->message = $message;
+        $this->mobile = $mobile;
+        $this->group = $group;
+    }
+
+    /**
+     * Get the notification's delivery channels.
+     *
+     * @param  mixed  $notifiable
+     * @return array
+     */
+    public function via($notifiable)
+    {
+        return [SmartSmsChannel::class];
+    }
+
+    public function toChannel()
+    {
+        return [
+            'text' => $this->message,
+            'mobile' => $this->mobile,
+            'group' => $this->group
+        ];
+    }
+}
