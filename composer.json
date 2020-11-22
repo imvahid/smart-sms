@@ -37,7 +37,7 @@
         "Va\\SmartSms\\SmartSmsServiceProvider"
       ],
       "aliases": {
-        "SmartSms" : "Va\\SmartSms\\Facades\\SmartSms"
+        "SmartSms" : "Va\\SmartSms\\Facades\\SmsNotificationFacade"
       }
     }
   }
