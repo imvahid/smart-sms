@@ -6,7 +6,7 @@
 
 Sms Notification service and channel for send sms with [smartsms.ir](https://smartsms.ir/)
 
-##How to install and config [va/smart-sms](https://github.com/va1hi9da9sh2ou0rz2ad1eh7/smart-sms) package?
+## How to install and config [va/smart-sms](https://github.com/va1hi9da9sh2ou0rz2ad1eh7/smart-sms) package?
 
 #### Installation
 
